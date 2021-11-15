@@ -1,0 +1,65 @@
+<!doctype html>
+
+
+<html lang="es">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        
+        <title> Calculadora  </title>    
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet"> 
+        
+        <!-- Link hacia el archivo de estilos css -->
+        <link rel="stylesheet" href="ui.component.css">
+        <script type="text/javascript">
+        
+        </script>
+        
+    </head>
+    
+    <body>
+
+         <div class="contenedorcentrado">
+            <div class="titulo">
+                Calcular Area de un Cuadrado 
+            </div>
+
+         </div>
+        <div id="contenedor">
+            
+            <div id="contenedorcentrado">
+                <div id="login">
+                    
+                    <IMG src="http://www.calculararea.com/images/figCuadrado.png" width="250" height="200">
+                    
+                </div>
+                <div id="derecho">
+              
+                        <form id="loginform">
+                            <label for="Lado">Lado: </label>
+                            <input type="number" alt=""  tabindex="1" maxlength="9" size="9" value="" id="valor1" name="valor1" placeholder="lado" [(ngModel)]="valor1"/>
+                            <button  title="Calcular" name="Calcular"(click)="Calcular()">Calcular</button><br><BR>
+                            
+                    
+							
+                            <p> Resultado: {{result}} </p>
+                        </form>
+                       
+                   
+                </div>
+                <div id="derecho">
+                    
+                        <IMG src="http://www.calculararea.com/images/formulaCuadrado.png" width="200" height="100">
+                        
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
