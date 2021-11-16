@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "57bee21a-a1c1-4cbc-b562-d66aa057f015"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
